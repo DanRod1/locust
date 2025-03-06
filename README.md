@@ -14,3 +14,4 @@ docker build <project_dir> <imageName:imangeTag>
 ```shell
 docker run --env TARGET=http://192.169.0.2 <imageName:imageTag>
 ```
+
