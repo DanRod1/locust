@@ -1,0 +1,5 @@
+{
+    "docker.composeCommand": "/usr/bin/docker-compose",
+    "docker.dockerPath": "/usr/bin/docker",
+    "DockerRun.DisableAutoGenerateConfig": true
+}
