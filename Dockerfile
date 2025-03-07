@@ -4,6 +4,6 @@ COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 COPY locustfile.py locustfile.py
 COPY . .
-RUN echo 'locust -f /home/locust/locustfile.py --headless -u 100 -r 50 -t 5m -H http://192.168.0.2' > /home/locust/entrypoint.sh
+RUN echo 'locust -f /home/locust/locustfile.py --headless -H http://192.168.0.2' > /home/locust/entrypoint.sh
 RUN chmod +x /home/locust/entrypoint.sh
 ENTRYPOINT /home/locust/entrypoint.sh
